@@ -19,6 +19,11 @@ def divide(a, b):
 def power(a,b):
     """Returns a raised to the power of b."""
     return a ** b
+def modulus(a, b):
+    """Returns the remainder of a divided by b. Raises ValueError if b is zero."""
+    if b == 0:
+        raise ValueError("Cannot perform modulus by zero.")
+    return a % b
 
 if __name__ == "__main__":
     # Use these methods when it is imported as a module, not when run directly.
